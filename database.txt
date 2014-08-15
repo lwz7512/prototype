@@ -1,0 +1,66 @@
+database design for m-enroll
+==============================
+
+database: menroll
+
+table: me_student, student information (not include curriculum);
+
+s_id,
+s_name,
+s_sex,
+s_age,
+s_photo,
+s_mobile,
+s_register_time,
+s_address,
+
+
+table: me_course, course information (not include teacher);
+
+c_id,
+c_name,
+c_content,
+c_expense,
+c_period,
+c_stu_volume,
+c_start_time,
+c_end_time,
+c_status, (manual assign the complete status)
+
+
+table: me_teacher, teacher/coach information (not include curriculum);
+
+t_id,
+t_name,
+t_sex,
+t_age,
+t_photo,
+t_teach_content,
+t_mobile,
+
+
+table: me_stu_curi_rela, student and curriculum relation;
+
+r_id,
+r_stu_id,
+r_cou_id,
+r_enroll_time,
+r_status, (manual assign the complete status)
+
+
+table: me_tea_cou_rela, teacher and curriculum relation
+
+r_id,
+r_tea_id,
+r_cou_id,
+r_assign_time,
+
+
+table: me_stu_sign, student training sign;
+
+s_id,
+s_stu_id,
+s_cou_id,
+s_sign_time,
+s_per_seq,
+
